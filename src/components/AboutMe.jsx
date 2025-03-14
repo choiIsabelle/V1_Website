@@ -93,9 +93,9 @@ export const AboutMe = () => {
                 <AboutMeTextBlock />
                 <LinksContainer>
                     <SocialLinks height={35} width={35} dark />
-                    <OutlineButton title="Resume download" color={palette.red} icon={true} />
+                    <OutlineButton title="Download Resume" fileUrl="/resume.txt" color={palette.red} icon />
                 </LinksContainer>
-                <ReachableContainer><AboutMeText>I am reachable at</AboutMeText><StyledLink href="mailto:isabellelissina@gmail.com">IsabelleLissina@gmail.com 💌</StyledLink></ReachableContainer>
+                <ReachableContainer><AboutMeText>I am reachable at</AboutMeText><StyledLink href="mailto:isabellelissina@gmail.com">IsabelleLissina@gmail.com ✏️</StyledLink></ReachableContainer>
             </AboutMeInnerContainer>
             <PersonalImageOutlineBox />
         </AboutMeWrapper>

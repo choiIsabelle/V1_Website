@@ -20,10 +20,15 @@ const Navbar=()=>{
         <header className="header">
           <nav className="navbar">
               <div className="navbar-nav">
-                  <a href="https://github.com/choiIsabelle" target="_blank" className="nav-item" rel="noopener noreferrer">
+                  <a href="https://choiisabelle.github.io/V1_Website/" className="nav-item">
                     <StyledHeading color={palette.lightRed}>ISABELLE CHOI</StyledHeading>
                  </a>
             </div>
+            {/* <div className="side-item">
+                  <a href="https://choiisabelle.github.io/V1_Website/" className="nav-item" rel="noopener noreferrer">
+                    <StyledHeading color={palette.lightRed}>Projects</StyledHeading>
+                 </a>
+            </div> */}
         </nav>
       </header>    
     )

@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { palette } from './palette'
+import styled from 'styled-components';
+import { palette } from './palette';
 import { OpenLinkIcon } from './svgs/OpenLinkIcon';
 
-const StyledOutlineButton = styled.button`
+const StyledOutlineButton = styled.a`
   background: white;
   border: 3px solid ${(props) => props.color || palette.red};
   border-radius: 6px;
   box-sizing: border-box;
-  color:  ${(props) => props.color || palette.red};
+  color: ${(props) => props.color || palette.red};
   cursor: pointer;
   display: inline-block;
   font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
@@ -24,12 +24,14 @@ const StyledOutlineButton = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  text-decoration: none;
   transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.1);
     color: #ad0a7cd7;
-    border: 3px solid  #ad0a7cd7;
+    border: 3px solid #ad0a7cd7;
+  }
 
   &:active {
     opacity: 0.5;
@@ -37,10 +39,21 @@ const StyledOutlineButton = styled.button`
 `;
 
 const StyledOpenLinkIconContainer = styled.div`
-display: inline-block;
+  display: inline-block;
 `;
 
 export const OutlineButton = (props) => {
-  const { title, color, icon } = props;
-  return <StyledOutlineButton color={color} title={title}>{title}{icon ? <StyledOpenLinkIconContainer><OpenLinkIcon width={20} height={20}/></StyledOpenLinkIconContainer> : <></>}</StyledOutlineButton>;
+  const { title, color, icon, fileUrl } = props;
+  
+  return (
+    <StyledOutlineButton 
+      href={fileUrl} 
+      color={color} 
+      title={title} 
+      download 
+    >
+      {title}
+      {icon && <StyledOpenLinkIconContainer><OpenLinkIcon width={20} height={20} /></StyledOpenLinkIconContainer>}
+    </StyledOutlineButton>
+  );
 };

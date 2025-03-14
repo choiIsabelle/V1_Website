@@ -2,6 +2,7 @@ import React from 'react'
 import * as c from './CustomComponents'
 import styled from 'styled-components'
 import {Line} from './svgs/Line'
+import ProjectItem from './ProjectItem';
 
 const StyledSectionHeaderContainer = styled.div`
 display: flex;
@@ -29,6 +30,14 @@ const Projects = () => {
     <StyledSectionHeaderContainer>
         <c.NameText>My</c.NameText><c.NameText isPink>Projects</c.NameText>
     </StyledSectionHeaderContainer>
+    <ProjectItem
+    projectTitle={"Personal Website"}
+    date="Winter 2025 ❄️"
+    content="Personal website created using Javascript and React, hosted on Github pages."
+    githubLink="https://github.com/choiIsabelle/V1_Website"
+    skills={["React", "Javascript"]}
+    
+    />
     </ProjectsWrapper>
   )
 }

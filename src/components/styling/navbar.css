@@ -5,13 +5,19 @@
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
+    /* position: fixed; */
 }
 .header{
 
 }
 .navbar-nav{
     list-style-type: none;
-    overflow:ellipse;
+    overflow: hidden;
+}
+
+.side-item{
+    list-style-type: none;
+    margin-right: 5rem;
 }
 
 .nav-item {
