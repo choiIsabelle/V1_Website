@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styled from 'styled-components'
 import * as c from './CustomComponents'
 import ExperienceSection from './ExperienceSection'
@@ -27,9 +27,9 @@ gap: 1rem;
 flex-direction: column;
 `
 
-const Projects = () => {
+const Experience = forwardRef((props, ref) => {
   return (
-    <ProjectsWrapper className='ProjectsWrapper'>
+    <ProjectsWrapper className='ProjectsWrapper' ref={ref}>
     <ExperienceSectionContainer>
     <StyledSectionHeaderContainer>
         <c.NameText>My</c.NameText><c.NameText isPink>Work Experience</c.NameText>
@@ -80,6 +80,6 @@ const Projects = () => {
     </ExperienceSectionContainer>
     </ProjectsWrapper>
   )
-}
+})
 
-export default Projects
+export default Experience

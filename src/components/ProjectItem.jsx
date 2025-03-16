@@ -71,7 +71,7 @@ const SkillButtons=({skills})=>{
 const ProjectItem = ({projectTitle, date, content, skills, githubLink, hostedLink}) => {
   return (
     <Card>
-      <StyledLink href={githubLink}><StyledTitle>{projectTitle}</StyledTitle></StyledLink>
+      <StyledLink href={githubLink} target="_blank" rel='noopener'><StyledTitle>{projectTitle}</StyledTitle></StyledLink>
       <StyledDate>{date}</StyledDate>
       <StyledContentText>{content}</StyledContentText>  
 

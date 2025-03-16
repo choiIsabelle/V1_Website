@@ -104,6 +104,6 @@ const ExperienceSection = (props) => {
       </StyledSkillButtonContainer>
     </StyledExperienceContainer>
   )
-}
+};
 
 export default ExperienceSection

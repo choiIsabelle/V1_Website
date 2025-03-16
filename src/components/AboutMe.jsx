@@ -1,3 +1,4 @@
+import React, { forwardRef } from 'react'
 import styled from 'styled-components'
 import './styling/aboutme.css'
 import { SocialLinks } from './SocialLinks'
@@ -24,7 +25,7 @@ const AboutMeInnerContainer = styled.div`
 `;
 
 const GreetingContainer = styled.div`
-    gap: 0.75rem;
+    gap: 0.8rem;
     display: flex;
     flex-wrap: wrap;
 `;
@@ -69,8 +70,8 @@ const AboutMeTextBlock = () => {
     return (
         <div>
             <AboutMeText>
-                I am a 3rd-year Computer Science CO-OP student at the University of Ottawa. I expect to graduate by January 2027.
-                I have 12 months of work experience including front-end development and DevOps. I am most proficient in Typescript and React.
+                I am a 3rd-year Computer Science CO-OP student at the University of Ottawa. My expected graduation date is January 2027.
+                I have 12 months of work experience within front-end development and DevOps. I am most proficient in Typescript and React.
                 I am deeply curious about creating unique solutions to problems utilizing technology. My goal is to gain experience in as many areas
                 spanning the software development lifecycle as possible.
             </AboutMeText>
@@ -78,17 +79,17 @@ const AboutMeTextBlock = () => {
     );
 };
 
-export const AboutMe = () => {
+export const AboutMe = forwardRef((props, ref) => {
     const NameHeading = ({ isName, content }) => (
         <c.NameText isPink={isName}>{content}</c.NameText>
     );
 
     return (
-        <AboutMeWrapper id="AboutMe_Wrapper">
+        <AboutMeWrapper id="AboutMe_Wrapper" ref={ref}> 
             <AboutMeInnerContainer id="AboutMe_InnerContainer">
                 <GreetingContainer>
                     <NameHeading content={"Hey! I'm "} />
-                    <NameHeading isName={true} content={"Isabelle."} />
+                    <NameHeading isName={true} content={"Isabelle Choi"} />
                 </GreetingContainer>
                 <AboutMeTextBlock />
                 <LinksContainer>
@@ -100,4 +101,4 @@ export const AboutMe = () => {
             <PersonalImageOutlineBox />
         </AboutMeWrapper>
     );
-};
+});
