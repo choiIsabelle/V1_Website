@@ -1,0 +1,50 @@
+.circles {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    filter: blur(80px);
+    width: 400px;
+
+    margin-top: 30rem;
+    transform: translateY(-50%);
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    z-index: -1; 
+}
+
+.circle1 {
+    width: 500px;
+    height: 50vh;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffd7eb 0%, rgb(255, 205, 236) 87%);
+    animation: slidein 2s infinite alternate;
+}
+
+.circle2 {
+    position: absolute;
+    width: 500px;
+    height: 50vh;
+    border-radius: 50%;
+    left: 30px;
+    left: 200px;
+    background: radial-gradient(circle, rgb(207, 204, 206) 0%, rgba(249, 249, 249, 1) 100%);
+    animation: slidein 2s infinite alternate;
+}
+
+@keyframes slidein {
+    from {
+        top: 0px;
+        right: 0px;
+
+    }
+
+    to {
+        top: 50px;
+        right: 100%;
+        width: 200%;
+    }
+}
