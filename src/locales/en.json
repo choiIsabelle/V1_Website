@@ -31,7 +31,7 @@
       "skills": ["React", "Typescript", "Redux", "Node.js", "Cypress", "Jest", "CI/CD"]
     },
     "experience3": {
-      "title": "DevOps Developer, CO-OP Student",
+      "title": "DevOps Engineering Intern",
       "company": "Ford Motor Company of Canada",
       "location": "Ottawa, ON, CA",
       "companyLink": "https://www.ford.ca/",
@@ -44,7 +44,7 @@
       "skills": ["Unix shell", "Github Actions", "Bash scripting", "Docker", "Jenkins"]
     },
     "experience4": {
-      "title": "Front End Developer, CO-OP Student",
+      "title": "Front End Developer Intern",
       "company": "Kinaxis",
       "location": "Ottawa, ON, CA",
       "companyLink": "https://www.kinaxis.com/en",
