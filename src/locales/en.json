@@ -1,0 +1,76 @@
+{
+  "aboutMe": {
+    "description": "I am a 4th Year Computer Science CO-OP student at the University of Ottawa. I will graduate April 2027. \nI have 20+ months of work experience across fullstack development and DevOps. I am most proficient in Typescript and Python.\nI am deeply curious about creating unique technical solutions to problems using software. I strive to gain both depth and breadth across areas in the software development lifecycle."
+  },
+  "experience": {
+    "experience1": {
+      "title": "Fullstack Developer Intern",
+      "company": "Nokia",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://www.nokia.com/",
+      "experienceBullets": [
+        "Updated ES5 legacy code with modern React features to improve performance and maintainability in Nokia's complex web project.",
+        "Collaborated with cross-functional teams to design and develop scalable solutions to serve internal customers.",
+        "Contributed 50+ unit and integration tests in Cypress and Jest to ensure code quality and reliability."
+      ],
+      "date": "Fall 🍂 September 2025 - December 2025",
+      "skills": ["React", "Typescript", "Node.js", "Podman", "Docker", "Postman"]
+    },
+    "experience2": {
+      "title": "Fullstack Developer Intern",
+      "company": "Cisco Meraki",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://meraki.cisco.com/",
+      "experienceBullets": [
+        "Reduced front-end load times by 10% (p90) by implementing optimized UI rendering and API integration logic.",
+        "Build and maintain user interfaces using Typescript, React Redux following test-driven development.",
+        "Improved in-house component library through modular design and state management using React and Redux best practices.",
+        "Synchronize database and REST API schema to facilitate effective data flow across tech stack."
+      ],
+      "date": "Summer ☀️ June 2025 - August 2025",
+      "skills": ["React", "Typescript", "Redux", "Node.js", "Cypress", "Jest", "CI/CD"]
+    },
+    "experience3": {
+      "title": "DevOps Developer, CO-OP Student",
+      "company": "Ford Motor Company of Canada",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://www.ford.ca/",
+      "experienceBullets": [
+        "Improved CI/CD pipelines (Github Actions, Jenkins) utilizing Github REST API and Github Webhooks API triggers to automate workflows and reduce errors.",
+        "Wrote Github actions to modularize testing and deployment processes in YAML.",
+        "Updated CMake infrastructure build tools and tested pipelines in a Linux-based development environment."
+      ],
+      "date": "Winter ❄️ January 2025 - April 2025",
+      "skills": ["Unix shell", "Github Actions", "Bash scripting", "Docker", "Jenkins"]
+    },
+    "experience4": {
+      "title": "Front End Developer, CO-OP Student",
+      "company": "Kinaxis",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://www.kinaxis.com/en",
+      "experienceBullets": [
+        "Translating UX mock-ups into functional React components.",
+        "Adopted legacy Java features into Web application through creation of server-side API and new UI using Typescript, React.",
+        "Implementing unit and integration tests (NUnit, Jest).",
+        "Extending and improving React component functionality to alleviate technical debt and fulfill customer requests.",
+        "Extending functionality of existing RESTful API endpoints"
+      ],
+      "date": "Summer ☀️ May 2024 - August 2024",
+      "skills": ["Typescript", "React", "C#", "REST API development", "Visual Studio", "NUnit", "Jest"]
+    },
+    "experience5": {
+      "title": "Front End Developer Intern",
+      "company": "Kinaxis",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://www.kinaxis.com/en",
+      "experienceBullets": [
+        "Implemented unit tests to evaluate the efficiency of front-end components in Jest.",
+        "Investigated and resolved client-side bugs and performance issues to heighten user experience.",
+        "Amplified the usability and maintainability of highly-used React components to streamline development",
+        "Collaborated on code reviews and live fire sessions to accelerate developer progress on tasks."
+      ],
+      "date": "Summer ☀️ May 2023 - August 2024",
+      "skills": ["Typescript", "React", "C#", "REST API development", "Visual Studio"]
+    }
+  }
+}
