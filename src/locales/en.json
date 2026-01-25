@@ -1,8 +1,35 @@
 {
   "aboutMe": {
-    "description": "I am a 4th Year Computer Science CO-OP student at the University of Ottawa. I will graduate April 2027. \nI have 20+ months of work experience across fullstack development and DevOps. I am most proficient in Typescript and Python.\nI am deeply curious about creating unique technical solutions to problems using software. I strive to gain both depth and breadth across areas in the software development lifecycle."
+    "greeting": "Hey! I'm ",
+    "name": "Isabelle Choi",
+    "description": "I am a 4th Year Computer Science CO-OP student at the University of Ottawa. I will graduate April 2027. \nI have 2 years of work experience across fullstack development and development operations. I am experienced in front-end UI development, working in React, Typescript, and Node.js.\nI am deeply curious about creating unique solutions to problems using software. I strive to gain both depth and breadth across areas in the software development lifecycle.",
+    "reachableAt": "I am reachable at",
+    "email": "IsabelleLissina@gmail.com",
+    "emailEmoji": "✏️",
+    "downloadResume": "Download Resume"
+  },
+  "navbar": {
+    "name": "ISABELLE CHOI",
+    "about": "ABOUT",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS"
+  },
+  "sections": {
+    "my": "My",
+    "workExperience": "Work Experience",
+    "projects": "Projects"
   },
   "experience": {
+    "experience6": {
+      "title": "Embedded C/C++ Developer Intern",
+      "company": "Nokia",
+      "location": "Ottawa, ON, CA",
+      "companyLink": "https://www.nokia.com/",
+      "experienceBUllets": [
+        "Investigating and resolving bugs in C/C++ code in a Linux environment",
+        "Refactoring C/C++ code to optimize Ethernet driver functionality on Nokia router."
+      ]
+    },
     "experience1": {
       "title": "Fullstack Developer Intern",
       "company": "Nokia",
@@ -14,7 +41,14 @@
         "Contributed 50+ unit and integration tests in Cypress and Jest to ensure code quality and reliability."
       ],
       "date": "Fall 🍂 September 2025 - December 2025",
-      "skills": ["React", "Typescript", "Node.js", "Podman", "Docker", "Postman"]
+      "skills": [
+        "React",
+        "Typescript",
+        "Node.js",
+        "Podman",
+        "Docker",
+        "Postman"
+      ]
     },
     "experience2": {
       "title": "Fullstack Developer Intern",
@@ -28,7 +62,15 @@
         "Synchronize database and REST API schema to facilitate effective data flow across tech stack."
       ],
       "date": "Summer ☀️ June 2025 - August 2025",
-      "skills": ["React", "Typescript", "Redux", "Node.js", "Cypress", "Jest", "CI/CD"]
+      "skills": [
+        "React",
+        "Typescript",
+        "Redux",
+        "Node.js",
+        "Cypress",
+        "Jest",
+        "CI/CD"
+      ]
     },
     "experience3": {
       "title": "DevOps Engineering Intern",
@@ -41,7 +83,13 @@
         "Updated CMake infrastructure build tools and tested pipelines in a Linux-based development environment."
       ],
       "date": "Winter ❄️ January 2025 - April 2025",
-      "skills": ["Unix shell", "Github Actions", "Bash scripting", "Docker", "Jenkins"]
+      "skills": [
+        "Unix shell",
+        "Github Actions",
+        "Bash scripting",
+        "Docker",
+        "Jenkins"
+      ]
     },
     "experience4": {
       "title": "Front End Developer Intern",
@@ -56,7 +104,15 @@
         "Extending functionality of existing RESTful API endpoints"
       ],
       "date": "Summer ☀️ May 2024 - August 2024",
-      "skills": ["Typescript", "React", "C#", "REST API development", "Visual Studio", "NUnit", "Jest"]
+      "skills": [
+        "Typescript",
+        "React",
+        "C#",
+        "REST API development",
+        "Visual Studio",
+        "NUnit",
+        "Jest"
+      ]
     },
     "experience5": {
       "title": "Front End Developer Intern",
@@ -70,7 +126,38 @@
         "Collaborated on code reviews and live fire sessions to accelerate developer progress on tasks."
       ],
       "date": "Summer ☀️ May 2023 - August 2024",
-      "skills": ["Typescript", "React", "C#", "REST API development", "Visual Studio"]
+      "skills": [
+        "Typescript",
+        "React",
+        "C#",
+        "REST API development",
+        "Visual Studio"
+      ]
     }
+  },
+  "projects": {
+    "project1": {
+      "title": "Personal Website",
+      "date": "Winter 2025 ❄️",
+      "content": "Personal website created using Javascript and React, hosted on Github pages.",
+      "githubLink": "https://github.com/choiIsabelle/V1_Website",
+      "skills": ["React", "Javascript"]
+    }
+  },
+  "socialLinks": {
+    "github": "Github",
+    "githubUrl": "https://github.com/choiisabelle",
+    "linkedin": "Linkedin",
+    "linkedinUrl": "https://www.linkedin.com/in/isabellechoi/",
+    "email": "Email me",
+    "emailUrl": "mailto:isabellelissina@gmail.com",
+    "resume": "Resume Download",
+    "resumeUrl": "https://www.linkedin.com/in/isabelle-choi-19933221b/"
+  },
+  "links": {
+    "homepage": "https://choiisabelle.github.io/V1_Website/"
+  },
+  "accessibility": {
+    "enableJavascript": "You need to enable JavaScript to run this app."
   }
 }

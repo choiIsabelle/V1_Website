@@ -34,7 +34,8 @@ const Experience = React.forwardRef((props, ref) => {
     <ProjectsWrapper className='ProjectsWrapper' ref={ref}>
     <ExperienceSectionContainer>
     <StyledSectionHeaderContainer>
-        <c.NameText>My</c.NameText><c.NameText isPink>Work Experience</c.NameText>
+        <c.NameText>{strings.sections.my}</c.NameText>
+        <c.NameText isPink>{strings.sections.workExperience}</c.NameText>
     </StyledSectionHeaderContainer>
         {Object.values(strings.experience).map((exp, idx) => (
           <ExperienceSection
