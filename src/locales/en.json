@@ -25,10 +25,11 @@
       "company": "Nokia",
       "location": "Ottawa, ON, CA",
       "companyLink": "https://www.nokia.com/",
-      "experienceBUllets": [
+      "experienceBullets": [
         "Investigating and resolving bugs in C/C++ code in a Linux environment",
         "Refactoring C/C++ code to optimize Ethernet driver functionality on Nokia router."
       ],
+      "date": "Winter 🍂 January 2026 - Present",
       "skills": ["C", "C++", "Linux", "TCP/IP", "Ethernet"]
     },
     "experience1": {
