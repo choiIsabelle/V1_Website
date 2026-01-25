@@ -28,7 +28,8 @@
       "experienceBUllets": [
         "Investigating and resolving bugs in C/C++ code in a Linux environment",
         "Refactoring C/C++ code to optimize Ethernet driver functionality on Nokia router."
-      ]
+      ],
+      "skills": ["C", "C++", "Linux", "TCP/IP", "Ethernet"]
     },
     "experience1": {
       "title": "Fullstack Developer Intern",
