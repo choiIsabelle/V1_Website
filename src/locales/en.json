@@ -148,7 +148,7 @@
     "project2": {
       "title": "GoodKnight - ChessHacks 2025",
       "date": "Fall 2025 🍂",
-      "content": "GoodKnight is a chess bot built at ChessHacks 2025 (University of Waterloo) that combines PyTorch-based Convolutional Neural Networks with alpha-beta pruning for efficient search and neural leaf evaluation. The model uses a compact board-plane representation and NumPy-assisted preprocessing to deliver fast, deployable chess position evaluation.",
+      "content": "GoodKnight is a chess bot built at ChessHacks 2025 (University of Waterloo) using CNN model conditioned on a training pipeline processing hundreds of chess games. ",
       "githubLink": "https://github.com/choiIsabelle/GoodKnight",
       "skills": ["Python", "PyTorch", "Machine Learning", "Docker"]
     }

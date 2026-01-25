@@ -14,12 +14,23 @@ const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: fit-content;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: left;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
+`;
+
+const ProjectsGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 const Projects = forwardRef((props, ref) => {
@@ -30,16 +41,18 @@ const Projects = forwardRef((props, ref) => {
         <c.NameText>{strings.sections.my}</c.NameText>
         <c.NameText isPink>{strings.sections.projects}</c.NameText>
       </StyledSectionHeaderContainer>
-      {Object.values(strings.projects).map((project, idx) => (
-        <ProjectItem
-          key={project.title + idx}
-          projectTitle={project.title}
-          date={project.date}
-          content={project.content}
-          githubLink={project.githubLink}
-          skills={project.skills}
-        />
-      ))}
+      <ProjectsGrid>
+        {Object.values(strings.projects).map((project, idx) => (
+          <ProjectItem
+            key={project.title + idx}
+            projectTitle={project.title}
+            date={project.date}
+            content={project.content}
+            githubLink={project.githubLink}
+            skills={project.skills}
+          />
+        ))}
+      </ProjectsGrid>
     </ProjectsWrapper>
   );
 });
