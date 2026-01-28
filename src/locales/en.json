@@ -151,7 +151,7 @@
       "content": "GoodKnight is a chess bot built at ChessHacks 2025 (University of Waterloo) using CNN model conditioned on a training pipeline processing hundreds of chess games. ",
       "githubLink": "https://github.com/choiIsabelle/GoodKnight",
       "skills": ["Python", "PyTorch", "Machine Learning", "Docker"],
-      "image": "GoodKnight0.gif"
+      "image": "Goodknight0.gif"
     },
     "project3": {
       "title": "BooBooBuddy - ConUHacks 2026",
