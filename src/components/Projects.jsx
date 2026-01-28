@@ -50,6 +50,7 @@ const Projects = forwardRef((props, ref) => {
             content={project.content}
             githubLink={project.githubLink}
             skills={project.skills}
+            image={project.image}
           />
         ))}
       </ProjectsGrid>

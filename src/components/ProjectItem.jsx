@@ -63,6 +63,14 @@ const SkillButtonContainer = styled.div`
   gap: 0.5rem;
 `;
 
+const ProjectImage = styled.img`
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+`;
+
 const SkillButtons = ({ skills }) => {
   return (
     <>
@@ -79,10 +87,13 @@ const ProjectItem = ({
   content,
   skills,
   githubLink,
-  hostedLink,
+  image,
 }) => {
+  const imageSrc = image ? `${process.env.PUBLIC_URL}/${image}` : null;
+
   return (
     <Card>
+      {imageSrc && <ProjectImage src={imageSrc} alt={projectTitle} />}
       <StyledLink href={githubLink} target="_blank" rel="noopener">
         <StyledTitle>{projectTitle}</StyledTitle>
       </StyledLink>

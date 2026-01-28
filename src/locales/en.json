@@ -150,7 +150,16 @@
       "date": "Fall 2025 🍂",
       "content": "GoodKnight is a chess bot built at ChessHacks 2025 (University of Waterloo) using CNN model conditioned on a training pipeline processing hundreds of chess games. ",
       "githubLink": "https://github.com/choiIsabelle/GoodKnight",
-      "skills": ["Python", "PyTorch", "Machine Learning", "Docker"]
+      "skills": ["Python", "PyTorch", "Machine Learning", "Docker"],
+      "image": "GoodKnight0.gif"
+    },
+    "project3": {
+      "title": "BooBooBuddy - ConUHacks 2026",
+      "date": "Winter 2026 ❄️",
+      "content": "Agentic healthcare assistant that uses past health data to determine the proper protocol: call immediate care or continue advising. Uses Twilio to make real calls.",
+      "githubLink": "https://github.com/choiIsabelle/BooBooBuddy",
+      "skills": ["React", "NextJS", "TypeScript", "OpenAI API"],
+      "image": "BooBoo0.gif"
     }
   },
   "socialLinks": {
