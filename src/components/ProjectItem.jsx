@@ -103,9 +103,19 @@ const ProjectItem = ({
 
   return (
     <Card>
-      {imageSrc && <ProjectImage src={imageSrc} alt={projectTitle} />}
+      {imageSrc &&
+        (demoLink ? (
+          <a href={demoLink} target="_blank" rel="noopener">
+            <ProjectImage src={imageSrc} alt={projectTitle} />
+          </a>
+        ) : (
+          <a href={githubLink} target="_blank" rel="noopener">
+          <ProjectImage src={imageSrc} alt={projectTitle} />
+          </a>
+        ))
+      }
       <StyledLink href={demoLink ? demoLink : githubLink} target="_blank" rel="noopener">
-        <StyledTitle >{projectTitle}</StyledTitle>
+        <StyledTitle>{projectTitle}</StyledTitle>
       </StyledLink>
       <DateAndDemoLinkContainer>
         <StyledDate>{date}</StyledDate>
@@ -125,10 +135,10 @@ const ProjectItem = ({
       <StyledLinkContainer>
         <GitHubIcon width="25" height="25" link={githubLink} />
         {demoLink && (
-            <StyledLink href={demoLink} target="_blank" rel="noopener">
-              {strings.projects_ui.tryItNow}
-            </StyledLink>
-          )}
+          <StyledLink href={demoLink} target="_blank" rel="noopener">
+            {strings.projects_ui.tryItNow}
+          </StyledLink>
+        )}
       </StyledLinkContainer>
     </Card>
   );
