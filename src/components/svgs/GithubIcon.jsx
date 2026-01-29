@@ -1,11 +1,12 @@
 import strings from "../../locales/en.json";
 
 export const GitHubIcon = (props) => {
-  const { height, width, dark } = props;
+  const { height, width, dark, link } = props;
+  const target = link ? link : strings.socialLinks.githubUrl;
   return (
     <a
       className="navbar-brand"
-      href={strings.socialLinks.githubUrl}
+      href={target}
       title={strings.socialLinks.github}
     >
       <svg

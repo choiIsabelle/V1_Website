@@ -1,5 +1,5 @@
-import styled, {keyframes} from "styled-components";
-import isabelle_img from '../images/choi-i25.PNG';
+import styled, { keyframes } from "styled-components";
+import isabelle_img from "../images/isabelle_2025.png";
 
 const BoxOutline = styled.div`
   border: 5px solid #da2780;
@@ -22,7 +22,7 @@ const ImageCard = styled.div`
   box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: fit-content;
-  background-color: #FFFF;
+  background-color: #ffff;
   padding: 0.5rem;
   border-radius: 10px;
   transition: 0.3s;
@@ -62,7 +62,7 @@ const StyledImage = styled.img`
 export const PersonalImageOutlineBox = () => {
   return (
     <Wrapper>
-        <StyledImage src={isabelle_img} alt="Isabelle" />
+      <StyledImage src={isabelle_img} alt="Isabelle" />
     </Wrapper>
   );
 };

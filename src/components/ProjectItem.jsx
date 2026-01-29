@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { palette } from "./palette";
 import { GitHubIcon } from "./svgs/GithubIcon";
 import ItemButton from "./svgs/ItemButton";
+import strings from "../locales/en.json";
 
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -37,6 +38,7 @@ const StyledTitle = styled.h3`
 
 const StyledLink = styled.a`
   text-decoration: none;
+  font-weight: bold;
   color: ${palette.red};
 `;
 
@@ -54,6 +56,7 @@ const StyledContentText = styled.p`
 const StyledLinkContainer = styled.div`
   margin-top: 1rem;
   display: flex;
+  gap: 1rem;
 `;
 
 const SkillButtonContainer = styled.div`
@@ -61,6 +64,12 @@ const SkillButtonContainer = styled.div`
   flex-wrap: wrap;
   padding-top: 1rem;
   gap: 0.5rem;
+`;
+
+const DateAndDemoLinkContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+  // justify-content: space-between;
 `;
 
 const ProjectImage = styled.img`
@@ -87,6 +96,7 @@ const ProjectItem = ({
   content,
   skills,
   githubLink,
+  demoLink,
   image,
 }) => {
   const imageSrc = image ? `${process.env.PUBLIC_URL}/${image}` : null;
@@ -94,10 +104,18 @@ const ProjectItem = ({
   return (
     <Card>
       {imageSrc && <ProjectImage src={imageSrc} alt={projectTitle} />}
-      <StyledLink href={githubLink} target="_blank" rel="noopener">
-        <StyledTitle>{projectTitle}</StyledTitle>
+      <StyledLink href={demoLink ? demoLink : githubLink} target="_blank" rel="noopener">
+        <StyledTitle >{projectTitle}</StyledTitle>
       </StyledLink>
-      <StyledDate>{date}</StyledDate>
+      <DateAndDemoLinkContainer>
+        <StyledDate>{date}</StyledDate>
+        {/* {demoLink && (
+            <StyledLink href={demoLink} target="_blank" rel="noopener">
+              {strings.projects_ui.tryItNow}
+            </StyledLink>
+        )} */}
+      </DateAndDemoLinkContainer>
+
       <StyledContentText>{content}</StyledContentText>
 
       <SkillButtonContainer>
@@ -105,7 +123,12 @@ const ProjectItem = ({
       </SkillButtonContainer>
 
       <StyledLinkContainer>
-        <GitHubIcon width="25" height="25" />
+        <GitHubIcon width="25" height="25" link={githubLink} />
+        {demoLink && (
+            <StyledLink href={demoLink} target="_blank" rel="noopener">
+              {strings.projects_ui.tryItNow}
+            </StyledLink>
+          )}
       </StyledLinkContainer>
     </Card>
   );
