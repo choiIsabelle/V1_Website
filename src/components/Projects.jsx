@@ -7,19 +7,30 @@ import strings from "../locales/en.json";
 
 const StyledSectionHeaderContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   gap: 0.75rem;
+  min-width: 0;
 `;
 
 const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1050px;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
+  box-sizing: border-box;
+  min-width: 0;
+
+  @media (max-width: 600px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const ProjectsGrid = styled.div`

@@ -9,8 +9,8 @@ const StyledButton = styled.button`
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   line-height: 1.2;
   outline: 0;
-  white-space: nowrap;
-  max-width: 150px;
+  white-space: normal;
+  max-width: min(150px, 100%);
   overflow: hidden;
   text-overflow: ellipsis;
   background: linear-gradient(135deg, #e8e8e8 0%, #d4d4d4 50%, #c0c0c0 100%);

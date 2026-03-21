@@ -9,6 +9,9 @@ const StyledHeading = styled.h3`
   font-weight: 650;
   font-size: clamp(14px, 2vw, 18px);
   color: ${(props) => props.color};
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
 `
 
 const StyledText = styled.p`
@@ -24,8 +27,12 @@ const StyledBulletItem = styled.p`
 
 const StyledHeadingContainer = styled.div`
   display: flex;
-  gap: 0.45rem;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 0.35rem 0.75rem;
+  row-gap: 0.5rem;
+  width: 100%;
+  min-width: 0;
 `
 
 const StyledList = styled.ul`
@@ -51,7 +58,11 @@ align-items: start;
 const StyledSkillButtonContainer = styled.div`
 margin-top: 0.75rem;
 display: flex;
+flex-wrap: wrap;
+align-items: center;
 gap: 0.5rem;
+width: 100%;
+min-width: 0;
 `
 
 const StyledLink = styled.a`

@@ -12,9 +12,17 @@ const BoxOutline = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 100%; /* Full width */
-  min-width: 300px;
+  width: 100%;
+  min-width: 0;
   max-width: 350px;
+  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    order: -1;
+    max-width: min(320px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const ImageCard = styled.div`
@@ -50,8 +58,9 @@ const twist = keyframes`
 const StyledImage = styled.img`
   border-radius: 10px;
   height: auto;
-  width: 120%;
-  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  display: block;
   transition: transform 0.3s ease-in-out;
 
   &:hover {

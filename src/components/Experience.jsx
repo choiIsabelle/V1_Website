@@ -6,7 +6,10 @@ import strings from '../locales/en.json'
 
 const StyledSectionHeaderContainer = styled.div`
 display: flex;
+flex-wrap: wrap;
+align-items: baseline;
 gap: 0.75rem;
+min-width: 0;
 `
 
 const ProjectsWrapper = styled.div`
@@ -14,18 +17,25 @@ const ProjectsWrapper = styled.div`
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    box-sizing: border-box;
+    min-width: 0;
+
+    @media (max-width: 600px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 `;
 
 const ExperienceSectionContainer = styled.div`
 display: flex;
 gap: 1rem;
-margin-left: 4rem;
 flex-direction: column;
 `
 

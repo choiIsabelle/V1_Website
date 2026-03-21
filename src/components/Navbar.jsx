@@ -20,6 +20,16 @@ const StyledHeading = styled.p`
 
 const SideOptionsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem 1.25rem;
+  min-width: 0;
+
+  @media (max-width: 900px) {
+    justify-content: flex-start;
+    width: 100%;
+  }
 `;
 
 const StyledSideOptionButton = styled.button`

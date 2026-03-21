@@ -10,8 +10,10 @@
     padding-right: 2rem;
     padding-bottom: 1rem;
     box-sizing: border-box;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
+    min-width: 0;
     /* position: fixed; */
 }
 .header{
@@ -44,13 +46,13 @@
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
-        align-items: stretch;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        gap: 0.2rem;
+        align-items: flex-start;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        gap: 0.5rem;
     }
     .side-item {
-        margin-right: 0.5rem;
+        margin-right: 0.75rem;
     }
     .nav-item {
         font-size: 1rem !important;
