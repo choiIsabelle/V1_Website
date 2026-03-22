@@ -70,7 +70,7 @@ const StyledImage = styled.img`
 
 export const PersonalImageOutlineBox = () => {
   return (
-    <Wrapper>
+    <Wrapper className="PersonalImageOutlineBox">
       <StyledImage src={isabelle_img} alt="Isabelle" />
     </Wrapper>
   );

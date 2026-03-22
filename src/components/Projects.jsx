@@ -9,7 +9,7 @@ const StyledSectionHeaderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.75rem;
+  gap: 1rem;
   min-width: 0;
 `;
 
