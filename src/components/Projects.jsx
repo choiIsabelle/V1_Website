@@ -9,8 +9,9 @@ const StyledSectionHeaderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 1rem;
+  gap: 0.75;
   min-width: 0;
+  margin-bottom: 1rem;
 `;
 
 const ProjectsWrapper = styled.div`
