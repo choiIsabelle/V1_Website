@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "./styling/navbar.css";
-import { palette } from "./palette";
 import strings from "../locales/en.json";
+import { ThemeToggle } from "./ThemeToggle";
 
 const StyledHeading = styled.p`
   color: ${(props) => props.color};
@@ -13,7 +13,7 @@ const StyledHeading = styled.p`
   &:hover {
     background-color: initial;
     background-position: 0 0;
-    color: #ad0a7cd7;
+    color: var(--color-nav-hover);
     font-weight: 700;
   }
 `;
@@ -44,7 +44,7 @@ const Navbar = ({ aboutMeRef, experienceRef, projectsRef }) => {
       <nav className="navbar">
         <div>
           <a href={strings.links.homepage} className="nav-item">
-            <StyledHeading color={palette.lightRed} bold>
+            <StyledHeading color="var(--color-nav-name)" bold>
               {strings.navbar.name}
             </StyledHeading>
           </a>
@@ -59,7 +59,7 @@ const Navbar = ({ aboutMeRef, experienceRef, projectsRef }) => {
                 });
               }}
             >
-              <StyledHeading color={palette.fieryRed}>
+              <StyledHeading color="var(--color-nav-link)">
                 {strings.navbar.about}
               </StyledHeading>
             </StyledSideOptionButton>
@@ -73,7 +73,7 @@ const Navbar = ({ aboutMeRef, experienceRef, projectsRef }) => {
                 });
               }}
             >
-              <StyledHeading color={palette.fieryRed}>
+              <StyledHeading color="var(--color-nav-link)">
                 {strings.navbar.experience}
               </StyledHeading>
             </StyledSideOptionButton>
@@ -87,10 +87,13 @@ const Navbar = ({ aboutMeRef, experienceRef, projectsRef }) => {
                 });
               }}
             >
-              <StyledHeading color={palette.fieryRed}>
+              <StyledHeading color="var(--color-nav-link)">
                 {strings.navbar.projects}
               </StyledHeading>
             </StyledSideOptionButton>
+          </div>
+          <div className="nav-theme-toggle">
+            <ThemeToggle />
           </div>
         </SideOptionsContainer>
       </nav>

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {palette} from './palette'
 import { LocationIcon } from './svgs/LocationIcon'
 import {OpenLinkIcon} from './svgs/OpenLinkIcon'
 import ItemButton from './svgs/ItemButton'
@@ -8,7 +7,7 @@ import ItemButton from './svgs/ItemButton'
 const StyledHeading = styled.h3`
   font-weight: 650;
   font-size: clamp(14px, 2vw, 18px);
-  color: ${(props) => props.color};
+  color: ${(props) => props.color ?? 'var(--color-text)'};
   margin: 0;
   min-width: 0;
   overflow-wrap: anywhere;
@@ -17,7 +16,7 @@ const StyledHeading = styled.h3`
 const StyledText = styled.p`
   font-weight: 500;
   font-size: clamp(0.9rem, 2vw, 17px); 
-  color: ${(props) => props.color};
+  color: ${(props) => props.color ?? 'var(--color-text-muted)'};
    margin: 0.6rem 0;
 `
 
@@ -44,6 +43,7 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
   font-weight: 500;
   font-size: clamp(0.9rem, 2vw, 17px); 
+  color: var(--color-text);
   list-style-position: inside;
   padding-left: 0;
   margin-left: 0; 
@@ -67,9 +67,9 @@ min-width: 0;
 
 const StyledLink = styled.a`
 text-decoration: none;
-color: ${palette.red};
+color: var(--color-link);
 &:hover {
-  color: ${palette.redPink};
+  color: var(--color-link-hover);
 }
 `
 
@@ -77,9 +77,9 @@ const ExperienceTitle = ({ title, company, location, companyLink, date }) => {
   return (
     <StyledHeadingContainer>
       <StyledHeading>{title}</StyledHeading>
-      <StyledHeading color={palette.lightRed}><StyledLink href={companyLink} target="_blank" rel="noopener noreferrer">@ {company}</StyledLink></StyledHeading>
-      <LocationIcon width={20} height={20} color={palette.grey} />
-      <StyledHeading color={palette.grey}>{location}</StyledHeading>
+      <StyledHeading color="var(--color-link)"><StyledLink href={companyLink} target="_blank" rel="noopener noreferrer">@ {company}</StyledLink></StyledHeading>
+      <LocationIcon width={20} height={20} color="var(--color-text-muted)" />
+      <StyledHeading color="var(--color-text-muted)">{location}</StyledHeading>
       <OpenLinkIcon width={23} height={23} link={companyLink} />
     </StyledHeadingContainer>
   )
@@ -117,7 +117,7 @@ const ExperienceSection = (props) => {
         location={location} 
         companyLink={companyLink} 
       />
-      <StyledText color={palette.grey}>{date}</StyledText>
+      <StyledText>{date}</StyledText>
       <ExperienceBody experienceBullets={experienceBullets} />
       <StyledSkillButtonContainer>
         <SkillButtons skills={skills}/>

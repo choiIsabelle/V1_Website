@@ -3,7 +3,6 @@ import styled from "styled-components";
 import "./styling/aboutme.css";
 import { SocialLinks } from "./SocialLinks";
 import { PersonalImageOutlineBox } from "./PersonalImage";
-import { palette } from "./palette";
 import * as c from "./CustomComponents";
 import strings from "../locales/en.json";
 
@@ -12,6 +11,7 @@ const AboutMeText = styled.p`
   font-weight: 500;
   font-size: clamp(14px, 2vw, 18px);
   line-height: 1.5;
+  color: var(--color-text);
 
   @media (max-width: 768px) {
     text-align: center;
@@ -92,8 +92,12 @@ const ReachableContainer = styled.div`
 const StyledLink = styled.a`
   text-decoration: none;
   font-weight: 500;
-  color: ${palette.red};
+  color: var(--color-link);
   font-size: clamp(14px, 2vw, 18px);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
 `;
 
 const AboutMeTextBlock = () => {
@@ -118,7 +122,7 @@ export const AboutMe = forwardRef((props, ref) => {
         </GreetingContainer>
         <AboutMeTextBlock />
         <LinksContainer>
-          <SocialLinks height={35} width={35} dark />
+          <SocialLinks height={35} width={35} />
         </LinksContainer>
         <ReachableContainer>
           <AboutMeText>{strings.aboutMe.reachableAt}</AboutMeText>

@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import { palette } from './palette';
 import { OpenLinkIcon } from './svgs/OpenLinkIcon';
 
 const StyledOutlineButton = styled.a`
-  background: white;
-  border: 3px solid ${(props) => props.color || palette.red};
+  background: var(--color-card-bg);
+  border: 3px solid ${(props) => props.color || 'var(--color-link)'};
   border-radius: 6px;
   box-sizing: border-box;
-  color: ${(props) => props.color || palette.red};
+  color: ${(props) => props.color || 'var(--color-link)'};
   cursor: pointer;
   display: inline-block;
   font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
@@ -29,8 +28,8 @@ const StyledOutlineButton = styled.a`
 
   &:hover {
     transform: scale(1.1);
-    color: #ad0a7cd7;
-    border: 3px solid #ad0a7cd7;
+    color: var(--color-link-hover);
+    border: 3px solid var(--color-link-hover);
   }
 
   &:active {

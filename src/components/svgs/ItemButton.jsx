@@ -13,14 +13,14 @@ const StyledButton = styled.button`
   max-width: min(150px, 100%);
   overflow: hidden;
   text-overflow: ellipsis;
-  background: linear-gradient(135deg, #e8e8e8 0%, #d4d4d4 50%, #c0c0c0 100%);
-  color: #333;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  box-shadow: var(--color-tag-shadow);
   cursor: default;
 
   &:hover {
-    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 50%, #d0d0d0 100%);
-    color: #222;
+    background: var(--color-tag-bg-hover);
+    color: var(--color-tag-text-hover);
   }
 
   &:active {

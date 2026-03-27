@@ -9,7 +9,9 @@ const SocialLinksContainer = styled.div`
   gap: 1rem;
   flex-direction: row;
   border-radius: 6px;
-  background-color: ${props => props.dark ? 'black' : 'white'};
+  background-color: var(--color-social-bg);
+  color: var(--color-social-icon);
+  transition: background-color 0.25s ease, color 0.25s ease;
 `;
 
 const StyledIcon = styled.div`
@@ -23,26 +25,25 @@ const StyledIcon = styled.div`
   }
 `;
 
-const MakeStyledIcons = ({ icons, height = 25, width = 25, dark }) => {
+const MakeStyledIcons = ({ icons, height = 25, width = 25 }) => {
   return (
     <>
       {icons.map((Icon, index) => (
         <StyledIcon key={index}>
-          <Icon width={width} height={height} dark={dark} />
+          <Icon width={width} height={height} />
         </StyledIcon>
       ))}
     </>
   );
 };
 
-export const SocialLinks = ({ height, width, dark }) => {
+export const SocialLinks = ({ height, width }) => {
   return (
-    <SocialLinksContainer dark={dark}>
-      <MakeStyledIcons 
-        icons={[GitHubIcon, LinkedInIcon, EmailIcon]} 
-        height={height} 
-        width={width} 
-        dark={dark} 
+    <SocialLinksContainer>
+      <MakeStyledIcons
+        icons={[GitHubIcon, LinkedInIcon, EmailIcon]}
+        height={height}
+        width={width}
       />
     </SocialLinksContainer>
   );

@@ -29,6 +29,13 @@
         margin-right: 3rem;
 }
 
+.nav-theme-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
 @media (max-width: 900px) {
     .navbar {
         flex-direction: column;
@@ -63,7 +70,7 @@
     text-decoration: none;
 }
 .nav-item:hover{
-    color: #ad0a7cd7;
+    color: var(--color-nav-hover);
 } 
 
 /* .nav-link{

@@ -4,8 +4,9 @@
 	width: 100%;
 	box-sizing: border-box;
 	display: flex;
-	/* background-color: oklch(14.479% 0.00002 271.152); */
+	background-color: var(--color-page-bg);
 	flex-direction: column;
+	transition: background-color 0.25s ease;
 }
 
 .app-main-content {

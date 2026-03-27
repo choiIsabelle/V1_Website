@@ -1,7 +1,7 @@
 import strings from "../../locales/en.json";
 
 export const EmailIcon = (props) => {
-  const { height, width, dark } = props;
+  const { height, width } = props;
   return (
     <a
       className="navbar-brand"
@@ -9,6 +9,7 @@ export const EmailIcon = (props) => {
       target="_blank"
       rel="noopener noreferrer me"
       title={strings.socialLinks.email}
+      style={{ color: "inherit" }}
     >
       <svg
         width={width}
@@ -16,7 +17,7 @@ export const EmailIcon = (props) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 21"
         fill="none"
-        stroke={dark ? "white" : "black"}
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

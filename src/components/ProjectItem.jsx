@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { palette } from "./palette";
 import { GitHubIcon } from "./svgs/GithubIcon";
 import ItemButton from "./svgs/ItemButton";
 import strings from "../locales/en.json";
 
 export const Card = styled.div`
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  background-color: var(--color-card-bg);
+  box-shadow: var(--color-card-shadow);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -31,7 +31,7 @@ const StyledTitle = styled.h3`
   &:hover {
     background-color: initial;
     background-position: 0 0;
-    color: #ad0a7cd7;
+    color: var(--color-link-hover);
     font-weight: 700;
   }
 `;
@@ -39,24 +39,31 @@ const StyledTitle = styled.h3`
 const StyledLink = styled.a`
   text-decoration: none;
   font-weight: bold;
-  color: ${palette.red};
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
 `;
 
 const StyledDate = styled.p`
   font-weight: 600;
-  color: ${palette.grey};
+  color: var(--color-text-muted);
 `;
 
 const StyledContentText = styled.p`
   padding: 0;
   margin: 0;
   font-weight: 500;
+  color: var(--color-text);
 `;
 
 const StyledLinkContainer = styled.div`
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
+  align-items: center;
+  color: var(--color-text-muted);
 `;
 
 const SkillButtonContainer = styled.div`
