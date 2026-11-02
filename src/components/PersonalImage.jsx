@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import isabelle_img from "../images/isabelle_2026.png";
+import isabelle_img from "../images/isabelle_2026_1_web.png";
 
 const BoxOutline = styled.div`
   border: 5px solid #da2780;
